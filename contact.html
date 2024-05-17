@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact US</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #555;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            height: 70px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.4); /* Added bottom shadow */
+        }
+
+        #navimg {
+            height: 70px;
+            width: 90px;
+        }
+
+        .navbar a {
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navitem a:hover {
+            background-color: #5a2f90;
+            color: white;
+            border-radius: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+        }
+
+        .navitem {
+            margin-left: auto;
+            padding: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed; /* Change to fixed */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #5a2f90;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+        /* Footer styles */
+        footer {
+            background-color: #5a2f90;
+            color: white;
+            text-align: center;
+            height: 45px;
+            font-family: "Inter", sans-serif;
+            padding: 10px;
+            width: 100%;
+           
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            color: white;
+            margin: 0 auto;
+        }
+
+        /* Content styles */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 20px; /* Adjust top margin to accommodate navbar */
+            margin-bottom: 30px;
+        }
+
+        .info {
+            width: 600px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            margin-right: 60px;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .info h1,
+        .container h1 {
+            text-align: center;
+            color: #5a2f90;
+            margin-bottom: 20px;
+        }
+
+        .address {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #5a2f90;
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .icon-img {
+            height: 50px;
+            width: 50px;
+        }
+
+        h4 {
+            color: #5a2f90;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #ea345c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Form styles */
+        .container {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #5a2f90;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html"><img id="navimg" src="img/newlogo.png"></a>
+        <div class="navitem">
+            <a href="index.html">Home</a>
+             <div class="dropdown">
+                    <a href="#about" id="login-drop">Login</a>
+                    <div class="dropdown-content">
+                        <a href="administrator.html">Administrator Login</a>
+                        <a href="adminlogin.html">Admin Login</a>
+                        <a href="receptionistlogin.html">Receptionist's Login</a>
+                        <a href="doctorlogin.jsp">Doctor's Login</a>
+                        <a href="patientlogin.jsp">Patient's Login</a>
+                        <!-- Add more login options as needed -->
+                    </div>
+                </div>
+            <a href="Aboutus.html">About Us</a>
+            <a href="viewDoctor.jsp">Doctors</a>
+            <a href="onlinepatientreg.jsp">Book Apointment Online</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="info">
+            <h1>Contact Us</h1>
+            <!--<form ></form>-->
+            <div class="address">
+                <div class="icon"><img class="icon-img" src="img/icon1.png"></div>
+                <div>
+                    <h4>Address</h4>
+                    <p>Besides Hotel Neelam, Opp. Empire Mall, Badnera Road, Amravati-444605 Maharashtra, India</p>
+                </div>
+            </div>
+            <div class="address">
+                <div class="icon"><img class="icon-img" src="img/icon2.png"></div>
+                <div>
+                    <h4>Email</h4>
+                    <p>jkhospital@gmail.com</p>
+                    <p>contact@jkamt.com</p>
+                </div>
+            </div>
+            <div class="address">
+                <div class="icon"><img class="icon-img" src="img/icon3.png"></div>
+                <div>
+                    <h4>Phones</h4>
+                    <p>Appointments: 0721-4575688, 0721-3787686</p>
+                    <p>Emergency: 8976547895</p>
+                    <p>Ambulance: 8976547895</p>
+                
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Interested in discussing?</h1>
+            <form  action="email_contactus.jsp" method="POST" onsubmit="return validation()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobno">Mobile No</label>
+                    <input type="text" id="mobno" name="mobno" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="query">Query</label>
+                    <textarea id="query" name="query" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 JK Multispecialist Hospital Amravati. All Rights Reserved.</p>
+    </footer>
+    <script>
+             function validation() {
+            // Retrieve form values
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobno = document.getElementById("mobno").value;
+            var city = document.getElementById("city").value;
+            var query = document.getElementById("query").value;
+
+            // Check if fields are empty
+            if (name.trim() === '' || email.trim() === '' || mobno.trim() === '' || city.trim() === '' || query.trim() === '') {
+                alert("Please fill in all fields.");
+                return false;
+            }
+
+            // Check mobile number format
+            if (isNaN(mobno)) {
+                alert("Mobile Number should be numeric.");
+                return false;
+            } else if (mobno.length !== 10) {
+                alert("Mobile Number should be 10 digits.");
+                return false;
+            }
+
+            // If all validations pass, return true
+            return true;
+        }
+        </script>
+</body>
+</html>

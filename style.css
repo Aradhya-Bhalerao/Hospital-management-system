@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 20, 2024, 2:09:09 PM
+    Author     : vaish
+*/
+
+        /* Add your CSS styles here */
+        /* Navbar styles */
+   /* Navbar styles */
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    /*justify-content: space-between;  Adjust spacing */
+    align-items: center; /* Center vertically */
+}
+
+#navimg {
+    height: 70px;
+    width: 90px;
+}
+
+.navbar a {
+    /* float: right; / / Remove this line */
+    /* display: block; / / Remove this line */
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #5a2f90;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+
+}
+.navitem {
+    margin-left: auto;
+    padding: 10px;
+}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 90%; /* Changed to % */
+            height: 550px;
+            margin: auto;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); 
+        }
+
+        /* Slides */
+        .mySlides {
+            display: none;
+            width: 100%;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease; /* Fade animation */
+        }
+
+        /* Sidebar styles */
+      
+
+        /* Footer styles */
+        footer {
+            background-color: #5a2f90;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+            clear: both; /* Added to clear float */
+        }
+

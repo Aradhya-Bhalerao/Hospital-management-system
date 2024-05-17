@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            .container{
+                margin-right: 40px;
+                margin-left: 40px;
+                padding: 10px;
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .text{
+                padding:10px;
+                margin-left: 10px;
+
+            }
+            h4,h1{
+                color:navy;
+            }
+            p{
+                margin-top:10px;
+                color:#6c757d; 
+                margin-bottom: 10px;
+                font-size: 1rem;
+                font-weight: 500;
+                font-family: "Inter",sans-serif;
+            }
+            h4,h1,p{
+                letter-spacing:1.2;
+                line-height: 2;
+                font-family: "Inter",sans-serif;
+
+            }
+               
+/* Navbar styles */
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center vertically */
+    height: 70px;
+}
+
+#navimg {
+    height: 70px;
+    width: 90px;
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navitem a:hover {
+    background-color: #5a2f90;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+.navitem {
+    margin-left: auto;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 92%; /* Changed to % */
+    height: 510px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); 
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Fade animation */
+}
+
+/* Adjusting image size */
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+#aboutUsContent{
+    margin-top: 20px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed; /* Change to fixed */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #5a2f90;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #5a2f90;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+    clear: both; /* Added to clear float */
+}
+
+footer p {
+    color: white;
+    
+}
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html"><img id="navimg" src="img/newlogo.png"></a>
+            <div class="navitem">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#about" id="login-drop">Login</a>
+                    <div class="dropdown-content">
+                        <a href="administrator.html">Administrator Login</a>
+                        <a href="adminlogin.jsp">Admin Login</a>
+                        <a href="receptionistlogin.html">Receptionist's Login</a>
+                        <a href="doctorlogin.jsp">Doctor's Login</a>
+                        <a href="patientlogin.jsp">Patient's Login</a>
+                        <!-- Add more login options as needed -->
+                    </div>
+                </div>
+                <a href="Aboutus.html">About Us</a>
+                <a href="viewDoctor.jsp">Doctors</a>
+                <a href="onlinepatientreg.jsp">Book Apointment Online</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <br>
+
+        <div class="container">
+            <div>
+                <img src="img/aboutimg.png" width="700"/>
+            </div>
+            <div class="text">
+                <h4>About JK Multi-Specialist</h4>
+                <h1>Specialities & Superspecialities</h1>
+                <p>   With a commitment to excellence and a dedication to serving our community, JK Multi-Specialist Hospital stands as a beacon of healthcare innovation in the western Vidarbha region. Over the past four years, we have tirelessly pursued our vision of revolutionizing medical care, bringing together a team of expert doctors and state-of-the-art technology to ensure that every patient receives the highest standard of treatment.
+                </p><p>
+At JK Multi-Specialist Hospital, we understand that the journey to recovery is not just about advanced medical equipment; it's about the compassionate care and expertise of our dedicated medical professionals. Our team of doctors works around the clock, providing personalized attention and tailored treatment plans to meet the unique needs of each patient.
+</p>
+<p>
+    
+From routine check-ups to complex surgeries, our comprehensive range of medical services caters to every aspect of healthcare, ensuring that our patients have access to the best possible care under one roof. We are proud to have succeeded in our mission to make specialized medical expertise easily accessible and affordable to all members of our community.
+</p>
+
+<p>
+As we continue our journey forward, we remain committed to upholding the values of trust, honesty, and integrity that have guided us from the beginning. With your health and well-being at the forefront of everything we do, we strive to be not just a hospital, but a trusted partner in your journey to a healthier life.
+</p>
+
+            </div>
+        </div> 
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 JK Multispecialist Hospital Amravati. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
